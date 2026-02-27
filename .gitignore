@@ -1,0 +1,120 @@
+# ============================================================
+# 3R Project — .gitignore
+# ============================================================
+
+# ----- Secrets & Environment --------------------------------
+.env
+.env.*
+!.env.example
+*.secret
+secrets/
+local.settings.json
+
+# ----- OS ---------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# ----- Editor / IDE -----------------------------------------
+# VS Code
+.vscode/
+!.vscode/extensions.json
+
+# Visual Studio / Rider
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# JetBrains
+.idea/
+*.iml
+
+# ----- Node / JS / TS ---------------------------------------
+node_modules/
+dist/
+build/
+.next/
+.nuxt/
+.cache/
+.parcel-cache/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+
+# ----- Python -----------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+env/
+.env/
+*.egg-info/
+dist/
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# ----- .NET / C# --------------------------------------------
+bin/
+obj/
+*.user
+*.suo
+.vs/
+packages/
+*.nupkg
+*.snupkg
+TestResults/
+coverage/
+*.opencover.xml
+
+# ----- Data -------------------------------------------------
+data/raw/
+data/processed/
+*.csv
+!data/samples/*.csv
+*.parquet
+*.db
+*.sqlite
+*.sqlite3
+
+# ----- Logs -------------------------------------------------
+logs/
+*.log
+*.log.*
+
+# ----- Build & CI -------------------------------------------
+artifacts/
+publish/
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# ----- Misc -------------------------------------------------
+*.bak
+*.tmp
+*.temp
+*.swp
+*~
+.claudeignore
